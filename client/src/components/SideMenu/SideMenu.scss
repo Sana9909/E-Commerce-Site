@@ -1,0 +1,51 @@
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    // z-index: -10;
+
+}
+
+.cross-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: pink;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-items{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #eae7e0;
+    // z-index: 11;
+    color: #fff;
+    transition: transform 0.3s;
+    // animation: translateX 0.5s ease-in-out;
+
+    .linkName{
+        text-decoration: none;
+        color: #a28964;
+    }
+
+    .listItem:hover{
+        // text-decoration: underline;
+        // background-color: ();
+        background-color: rgb(162, 137, 100,0.3);
+        transition: all 0.7s;
+    }
+    
+}
+
+.menu-items.open{
+    transform: translateX(0);
+}
+
+.menu-items.closed{
+    transform: translateX(-100%);
+}
+
