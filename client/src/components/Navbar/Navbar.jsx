@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.scss'
 
 const Navbar = ({toggleMenu}) => {
+    
     return (
     <div className='navbar-wrapper'>
         <div className='scroller'>
@@ -44,7 +45,12 @@ const Navbar = ({toggleMenu}) => {
                     <MenuIcon onClick={toggleMenu}/>
                 </div>
                 <div className='center'>
-                    <Link className='link' to="/">THE SIGMA</Link>
+                    <div className="logo-container">
+                        <img src='./img/logo.jpeg' style={{width: '50px', height: '50px', cursor: 'pointer'}}/>
+                    </div>
+                    <div className="brand-container anton-regular">
+                        <Link className='link' to="/" style={{'font-size':'30px'}}>THE SIGMA</Link>
+                    </div>
                 </div>
                 <div className='right'>
                     <div className='center'>

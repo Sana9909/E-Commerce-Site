@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './SideMenu.scss'
+
+import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const SideMenu = ({toggleMenu,showSideMenu}) => {
@@ -12,7 +14,9 @@ const SideMenu = ({toggleMenu,showSideMenu}) => {
         )
       }
       <div className={`menu-items ${showSideMenu ? 'open' : 'closed'}`}>
-        <button className="cross-button" onClick={toggleMenu}>X</button>
+        <div className="sidemenu-header">
+          <div className="cross-button" onClick={toggleMenu}><CloseIcon/></div>
+        </div>
         <ul className='list'>
             <li className='listItem'>
                 <Link className='linkName' to="/products/1">Women</Link>

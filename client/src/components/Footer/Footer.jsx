@@ -38,9 +38,10 @@ const Footer = () => {
       </div>
       <div className="bottom">
         <div className="left">
-          <span className='copyright'>
-            &copy; Copyright 2023. All Rights Reserved
-          </span>
+          <div className='copyright' style={{'padding-bottom' : '20px'}}>
+            &copy; Copyright 2025. All Rights Reserved
+          </div>
+          <div className="brand-name anton-regular">THE SIGMA</div>
         </div>
         <div className="right">
           <img src="/img/payment.svg" alt="" />

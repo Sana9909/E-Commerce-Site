@@ -18,6 +18,14 @@ const Slider = () => {
     setCurrentSlide(currentSlide === 4 ? 0 : (previousState) => previousState + 1)
   }
 
+  // setTimeout(() => {
+  //   // prevSlide();
+  //   // nextSlide();
+  //   // currentSlide++;
+  //   setCurrentSlide(currentSlide === 4 ? 0 : (previousState) => previousState + 1);
+  //   console.log(currentSlide);
+  // }, 5000)
+
   const data = [
       "./img/hoodie1.avif",
       "./img/hoodie2.avif",
