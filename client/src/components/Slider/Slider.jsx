@@ -18,7 +18,7 @@ const Slider = () => {
     setCurrentSlide(currentSlide === 4 ? 0 : (previousState) => previousState + 1)
   }
 
-  // setTimeout(() => {
+  // setInterval(() => {
   //   // prevSlide();
   //   // nextSlide();
   //   // currentSlide++;
